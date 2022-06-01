@@ -1,0 +1,78 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.title }} | {{ site.description }}</title>
+    <meta http-equiv="refresh" content="3; URL={{ site.redirect_to }}">
+    <link rel="canonical" href="{{ site.redirect_to }}">
+
+<style>
+    body, h1, h2, h3, h4, h5, h6,
+    p, blockquote, pre, hr,
+    dl, dd, ol, ul, figure {
+        margin: 0;
+        padding: 0;
+    }
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: #363636;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        color: #e5e5e5;
+    }
+    .wrap {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 640px;
+        text-align: center;
+    }
+    img {
+        border: 10px solid #e5e5e5;
+        border-radius: 200px;
+        margin-bottom: 20px;
+        filter: grayscale(100%);
+    }
+    h1 {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    a, a:visited, a:active, a:focus, a:hover {
+        color: #2a7ae2;
+    }
+</style>
+
+</head>
+<body>
+    <main><div class="wrap">
+
+        <img src="/assets/images/toddmn-240.jpg"
+            data-src="/assets/images/toddmn-240.jpg 1x,
+                      /assets/images/toddmn-480.jpg 2x"
+            loading="lazy" alt="{{ site.title }}"
+            width="240" height="240" />
+
+        <h1>{{ site.title }}</h1>
+        <p>
+            This domain has been deprecated in favor of
+            <a href="https://toddhgardner.com">toddhgardner.com</a>.
+            You will be redirected in a few moments.
+        </p>
+        <p>
+            Sorry for the delay&hellip;
+        </p>
+
+    </div></main>
+</body>
+</html>

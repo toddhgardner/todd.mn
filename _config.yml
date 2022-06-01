@@ -1,0 +1,10 @@
+title: Todd H. Gardner
+description: Retired domain for Todd H Gardner. Redirecting to toddhgardner.com
+url: https://todd.mn
+
+redirect_to: https://toddhgardner.com
+
+exclude:
+  - "Gemfile*"
+  - "README.md"
+  - "LICENSE"
