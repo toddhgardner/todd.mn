@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }} | {{ site.description }}</title>
-    <meta http-equiv="refresh" content="3; URL={{ site.redirect_to }}">
-    <link rel="canonical" href="{{ site.redirect_to }}">
 
     <style>
         body, h1, h2, h3, h4, h5, h6,
@@ -74,5 +72,20 @@
         </p>
 
     </div></main>
+
+    <script>
+        var redirectTarget = "{{ site.redirect_to }}" + location.pathname;
+
+        var refreshTag = document.createElement("meta");
+        refreshTag.setAttribute("http-equiv", "refresh");
+        refreshTag.setAttribute("content", "3; URL=" + redirectTarget);
+        document.head.appendChild(refreshTag);
+
+        var canonicalTag = document.createElement("meta");
+        canonicalTag.setAttribute("rel", "canonical");
+        canonicalTag.setAttribute("href", canonicalTag);
+        document.head.appendChild(canonicalTag);
+    </script>
+
 </body>
 </html>
